@@ -1,0 +1,145 @@
+.main-articles {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.article {
+    flex-basis: 100%;
+    position: relative;
+    margin: 40px 0px;
+    padding: 25px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    background-color: $main-color;
+    color: white;
+
+
+    &__title {
+        flex-basis: 80%;
+        font-weight: bold;
+        font-family: $serif-font;
+        padding: 20px;
+        text-align: center;
+        font-size: 2.8rem;
+        text-transform: uppercase;
+
+        &::after {
+            content: "";
+            display: block;
+            position: relative;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 2px;
+            width: 100%;
+            background-color: white;
+        }
+    }
+
+
+    &__image {
+        border-radius: 5px 10px;
+        margin: 40px 70px 80px 70px;
+        width: 280px;
+    }
+
+    &__text {
+        flex-basis: 60%;
+        line-height: 1.4;
+        text-align: justify;
+        padding: 50px;
+    }
+
+
+    &--small {
+        margin: 35px 0;
+        padding: 0;
+        flex-basis: 40%;
+        background-color: white;
+        color: black;
+
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 70px;
+            width: 70px;
+            border-left: $border-article;
+            border-top: $border-article;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 70px;
+            width: 70px;
+            border-right: $border-article;
+            border-bottom: $border-article;
+
+        }
+
+        &__title {
+            font-family: $serif-font;
+            flex-basis: 80%;
+            padding: 70px;
+            font-size: 2.5rem;
+            text-transform: none;
+            font-weight: lighter;
+
+            &::after {
+                background-color: white;
+            }
+        }
+
+        &__image {
+            height: 250px;
+            width: auto;
+            margin: 0;
+
+        }
+
+        &__text {
+            font-size: 1rem;
+            flex-basis: 80%;
+            margin: 10px 0;
+        }
+    }
+
+    &--tiny {
+        flex-basis: 25%;
+        margin: 50px 0;
+        padding: 30px;
+        background-color: $light-color;
+
+        &__title {
+            font-size: 1.8rem;
+            font-family: $second-font;
+            font-weight: lighter;
+            // text-transform: none;
+        }
+
+        &__image {
+            width: 90%;
+            margin: 20px;
+        }
+
+        &__text {
+            flex-basis: 100%;
+            margin: 0;
+            padding: 10px;
+        }
+    }
+}

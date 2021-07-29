@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.header__image {
+  margin: 0 30px;
+  padding: 5px;
+  width: 180px;
+}
+
+.header__title {
+  height: 180px;
+  padding-right: 180px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.header__name {
+  font-size: 3.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  padding: 10px;
+}
+
+.header__name--small {
+  font-size: 1.8rem;
+}
+
+.header .menu {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-size: 1.4rem;
+  padding-bottom: 10px;
+}
+
+.header .menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .menu__list-element {
+  margin: 0 5px;
+  -ms-flex-preferred-size: 9%;
+      flex-basis: 9%;
+  text-align: center;
+}
+
+.header .menu__list-link {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #747373;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  border-left: 0px solid black;
+  border-right: 0px solid black;
+}
+
+.header .menu__list-link:hover {
+  color: #010031;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.main-articles {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.article {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  position: relative;
+  margin: 40px 0px;
+  padding: 25px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  background-color: #000e4d;
+  color: white;
+}
+
+.article__title {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  padding: 20px;
+  text-align: center;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+}
+
+.article__title::after {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 2px;
+  width: 100%;
+  background-color: white;
+}
+
+.article__image {
+  border-radius: 5px 10px;
+  margin: 40px 70px 80px 70px;
+  width: 280px;
+}
+
+.article__text {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  line-height: 1.4;
+  text-align: justify;
+  padding: 50px;
+}
+
+.article--small {
+  margin: 35px 0;
+  padding: 0;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  background-color: white;
+  color: black;
+}
+
+.article--small::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 70px;
+  border-left: 2px solid #000e4d;
+  border-top: 2px solid #000e4d;
+}
+
+.article--small::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 70px;
+  width: 70px;
+  border-right: 2px solid #000e4d;
+  border-bottom: 2px solid #000e4d;
+}
+
+.article--small__title {
+  font-family: "Playfair Display", serif;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  padding: 70px;
+  font-size: 2.5rem;
+  text-transform: none;
+  font-weight: lighter;
+}
+
+.article--small__title::after {
+  background-color: white;
+}
+
+.article--small__image {
+  height: 250px;
+  width: auto;
+  margin: 0;
+}
+
+.article--small__text {
+  font-size: 1rem;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  margin: 10px 0;
+}
+
+.article--tiny {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  margin: 50px 0;
+  padding: 30px;
+  background-color: #003392;
+}
+
+.article--tiny__title {
+  font-size: 1.8rem;
+  font-family: "Lato", sans-serif;
+  font-weight: lighter;
+}
+
+.article--tiny__image {
+  width: 90%;
+  margin: 20px;
+}
+
+.article--tiny__text {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin: 0;
+  padding: 10px;
+}
+
+.footer {
+  color: white;
+  background-color: #000620;
+  padding: 100px;
+  font-size: 1.6rem;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.project {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 300px;
+  background-image: url("../images/house3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=main.css.map */
